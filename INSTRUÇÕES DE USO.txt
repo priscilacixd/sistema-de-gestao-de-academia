@@ -1,0 +1,18 @@
+COMO USAR O SOFTWARE:
+
+O software já está hospedado em serviços, basta acessar a seguinte URL:
+
+https://sgda.onrender.com
+
+Você será direcionado para a primeira parte do site, que é o login, para garantir a unicidade e segurança. 
+Acesse com as seguintes credenciais:
+
+Nome de usuário:
+usuario
+
+Senha:
+senhaforte123
+
+Lembrando que o usuário e senha podem ser alterados dentro do software na parte de configurações.
+
+Agora é só desfrutar das funcionalidades do site.

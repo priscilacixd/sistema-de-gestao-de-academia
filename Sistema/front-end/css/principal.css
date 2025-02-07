@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --preto: #16191B;
+    --laranja: #FF5D18;
+    --cinza: #5A5D5D;
+    --branco: #F2F2F2;
+    --azul: #485F73;
+    --fonte-padrao: "Open Sans";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    color: var(--preto);
+}
+
+body {
+    background-color: var(--branco);
+}
+
+/* Navegação */
+header {
+    background-color: var(--azul);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: var(--branco);
+}
+
+#logo img {
+    height: 40px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a img {
+    margin-right: 8px;
+}
+
+nav a#ativo {
+    color: #fe7236ee;
+}
+
+nav a:hover {
+    color: var(--laranja);
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px;
+    color: var(--preto);
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.opcoes button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--preto);
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.opcoes button:hover {
+    background-color: #e0e0e05b;
+}
+
+.opcoes button img {
+    margin-right: 5px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--azul);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    color: var(--branco);
+}

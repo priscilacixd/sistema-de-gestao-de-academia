@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Detalhes</title>
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href= "../css/planos-formulario.css">
+    <script src="../script/planos-detalhes.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../imagens/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="clientes.html">
+                <img src="../imagens/clientes-24px.png" alt="Ícone de Clientes"> Clientes 
+            </a>
+            <a href="planos.html" id="ativo">
+                <img src="../imagens/planos.png" alt="Ícone de Planos">Planos
+            </a>
+            <a href="configuracoes.html">
+                <img src="../imagens/configurações.png" alt="Ícone de Configurações">Configurações</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>INFORMAÇÕES</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="valor">Valor</label>
+            <input type="number" id="valor" name="valor">
+
+            <label>Descrição</label>
+            <textarea id="descricao" name="descricao"></textarea>
+
+            <button type="submit" id="botao-enviar">ENVIAR</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Suporte: Fone (12)3456-7891 | Email: emailcorporativo@email.com</p>
+    </footer>
+</body>
+</html>

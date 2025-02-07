@@ -1,0 +1,116 @@
+:root {
+    --preto: #16191B;
+    --laranja: #FF5D18;
+    --cinza: #5A5D5D;
+    --branco: #F2F2F2;
+    --azul: #485F73;
+    --fonte-padrao: "Open Sans";
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: var(--fonte-padrao);
+}
+
+p {
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.caixa-esquerda {
+    background-color: var(--azul);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-de-login {
+    background-color: var(--branco);
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    height: 300px;
+}
+
+.caixa-de-login h2 {
+    margin-bottom: 2.5rem;
+    color: var(--cinza);
+}
+
+.campo-login {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.campo-login label {
+    margin-right: 0.5rem;
+    color: var(--cinza);
+}
+
+.campo-login input {
+    width: 100%;
+    padding: 0.5rem;
+    padding-left: 45px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.campo-login .icone-input {
+    position: absolute;
+    left: 10px;
+    top: 50%; 
+    transform: translateY(-50%); 
+    pointer-events: none; 
+}
+
+button {
+    background-color: var(--laranja);
+    color: #fff;
+    border: 1px solid black;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--laranja);
+}
+
+.caixa-esquerda, .caixa-direita {
+    width: 50%; 
+    height: 100%; 
+}
+
+.caixa-direita {
+    background-image: url('../imagens/mulher_correndo_login.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.texto-imagem {
+    font-size: 4vh;
+    text-align: start;
+}
+
+.texto-imagem h2 {
+    margin: 0;
+}

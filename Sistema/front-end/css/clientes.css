@@ -1,0 +1,72 @@
+:root {
+    --preto: #16191B;
+    --laranja: #FF5D18;
+    --cinza: #5A5D5D;
+    --branco: #F2F2F2;
+    --azul: #485F73;
+    --fonte-padrao: "Open Sans";
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.barra-pesquisa {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.barra-pesquisa input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    border: 1px solid var(--preto);
+    border-radius: 5px;
+    outline: none;
+}
+
+#icone-pesquisa {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#tabela-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tabela-cliente {
+    width: 80%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: var(--branco);
+}
+
+#tabela-cliente th, #tabela-cliente td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#tabela-cliente th {
+    background-color: var(--cinza);
+    color: var(--branco);
+    border: none;
+}
+
+#tabela-cliente tbody tr:nth-child(even) {
+    background-color: #e8e8e8;
+}
+
+
+
+
+

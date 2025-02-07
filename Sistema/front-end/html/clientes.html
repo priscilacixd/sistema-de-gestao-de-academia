@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/clientes.css">
+    <script src="../script/clientes.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../imagens/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="#" id="ativo">
+                <img src="../imagens/clientes-24px.png" alt="Ícone de Clientes"> Clientes 
+            </a>
+            <a href="planos.html">
+                <img src="../imagens/planos.png" alt="Ícone de Planos">Planos
+            </a>
+            <a href="configuracoes.html">
+                <img src="../imagens/configurações.png" alt="Ícone de Configurações">Configurações</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>CLIENTES</h1>
+        <div class="barra-pesquisa">
+            <input type="text" placeholder="Pesquise aqui">
+            <img src="../imagens/lupa-pesquisar.png" alt="Pesquisar" id="icone-pesquisa">
+        </div>
+
+        <div id="tabela-container">
+            <table id="tabela-cliente">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Código</th>
+                        <th>Plano</th>
+                        <th>Nome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="opcoes">
+                <button onclick="adicionarCliente()">
+                    <img src="../imagens/adicao-24px.png" alt="Ícone de adição"> Adicionar
+                </button>
+                <button onclick= "excluirCliente()">
+                    <img src="../imagens/excluir-24px.png" alt="Ícone de exclusão"> Excluir
+                </button>
+                <button onclick="verDetalhesCliente()">
+                    <img src="../imagens/seta-24px.png" alt="Ícone de seta"> Alterar/Detalhes</button>
+                <button onclick="verFinanceiro()">
+                    <img src="../imagens/real-24px.png" alt="Ícone de moeda real"> Financeiro
+                    </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Suporte: Fone (12)3456-7891 | Email: emailcorporativo@email.com</p>
+    </footer>
+</body>
+</html>

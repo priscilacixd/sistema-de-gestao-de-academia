@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Cliente</title>
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href= "../css/clientes-formulario.css">
+    <script src="../script/clientes-adicionar.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../imagens/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="clientes.html" id="ativo">
+                <img src="../imagens/clientes-24px.png" alt="Ícone de Clientes"> Clientes 
+            </a>
+            <a href="planos.html">
+                <img src="../imagens/planos.png" alt="Ícone de Planos">Planos
+            </a>
+            <a href="configuracoes.html">
+                <img src="../imagens/configurações.png" alt="Ícone de Configurações">Configurações</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>ADICIONAR CLIENTE</h1>
+        <form id="formularioAddCliente">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf">
+
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento">
+
+            <label for="telefone_1">Telefone:</label>
+            <input type="tel" id="telefone_1" name="telefone_1">
+
+            <label for="telefone_2">Telefone 2:</label>
+            <input type="tel" id="telefone_2" name="telefone_2">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <h3>Endereço</h3>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep">
+
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro">
+
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero">
+
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento">
+
+            <h3>Plano</h3>
+
+            <label for="plano">Plano:</label>
+            <select id="plano" name="plano" required>
+               
+            </select>
+
+            <label for="vencimento">Data de vencimento:</label>
+            <input type="number" id="vencimento" name="vencimento">
+
+            <button type="submit" id="botao-enviar">ENVIAR</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Suporte: Fone (12)3456-7891 | Email: emailcorporativo@email.com</p>
+    </footer>
+</body>
+</html>

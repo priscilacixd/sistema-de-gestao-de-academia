@@ -1,0 +1,94 @@
+:root {
+    --preto: #16191B;
+    --laranja: #FF5D18;
+    --cinza: #5A5D5D;
+    --branco: #F2F2F2;
+    --azul: #485F73;
+    --fonte-padrao: "Open Sans";
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.barra-pesquisa {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.barra-pesquisa input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    border: 1px solid var(--preto);
+    border-radius: 5px;
+    outline: none;
+}
+
+#icone-pesquisa {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#tabela-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tabela-plano {
+    width: 80%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: var(--branco);
+}
+
+#tabela-plano th, #tabela-plano td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#tabela-plano th {
+    background-color: var(--cinza);
+    color: var(--branco);
+    border: none;
+}
+
+#tabela-plano tbody tr:nth-child(even) {
+    background-color: #858484;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.opcoes button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--preto);
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.opcoes button:hover {
+    background-color: #e0e0e05b;
+}
+
+.opcoes button img {
+    margin-right: 5px;
+}
+
