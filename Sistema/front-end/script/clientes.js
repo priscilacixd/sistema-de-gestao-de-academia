@@ -22,7 +22,7 @@ function buscarClientes() {
 }
 
 function adicionarCliente() {
-    window.location.href = "/clientes-adicionar.html";
+    window.location.href = "clientes-adicionar.html";
 }
 
 function excluirCliente() {

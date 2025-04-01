@@ -66,6 +66,32 @@ main {
     background-color: #e8e8e8;
 }
 
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.opcoes button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--preto);
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.opcoes button:hover {
+    background-color: #e0e0e05b;
+}
+
+.opcoes button img {
+    margin-right: 5px;
+}
+
+
 
 
 

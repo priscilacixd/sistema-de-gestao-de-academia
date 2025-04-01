@@ -10,8 +10,8 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: var(--fonte-padrao);
+    background-color: var(--azul);
 }
 
 p {
@@ -19,13 +19,11 @@ p {
 }
 
 .container {
-    display: flex;
-    height: 100vh;
+    display: flex;    
 }
 
 .caixa-esquerda {
-    background-color: var(--azul);
-    flex: 1;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,8 +35,8 @@ p {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 250px;
-    height: 300px;
+    width: 260px;
+    height: 340px;
 }
 
 .caixa-de-login h2 {
@@ -92,11 +90,11 @@ button:hover {
 }
 
 .caixa-esquerda, .caixa-direita {
-    width: 50%; 
-    height: 100%; 
+    width: 50%;
 }
 
 .caixa-direita {
+    height: 100vh;
     background-image: url('../imagens/mulher_correndo_login.jpg'); 
     background-size: cover;
     background-position: center;
@@ -107,10 +105,21 @@ button:hover {
 }
 
 .texto-imagem {
-    font-size: 4vh;
+    font-size: 1.9rem;
     text-align: start;
 }
 
 .texto-imagem h2 {
     margin: 0;
+}
+
+@media (max-width: 1080px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixa-direita, .caixa-esquerda {
+        width: 100vw;
+    }
 }

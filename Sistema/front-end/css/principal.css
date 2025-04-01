@@ -24,6 +24,7 @@ body {
 
 /* Navegação */
 header {
+    width: 100%;
     background-color: var(--azul);
     padding: 15px;
     display: flex;
@@ -110,4 +111,19 @@ footer {
 
 footer p {
     color: var(--branco);
+}
+
+@media (max-width: 563px) {
+    nav {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 3.2vw;
+    }
+
+    nav a img {
+        width: 16px;
+        height: 16px;
+    }
 }

@@ -41,7 +41,7 @@ function excluirPlano() {
 }
 
 function adicionarPlano() {
-    window.location.href = "/planos-adicionar.html";
+    window.location.href = "planos-adicionar.html";
 }
 
 function verDetalhesPlano() {
